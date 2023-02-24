@@ -1,7 +1,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+.navbar-nav {
+   background-color: aqua; 
+   margin-left: auto;
+   margin-right: 20%;
+}
+.navbar-brand {
+    background-color: aquamarine;
+    margin-left: 20%;
+    margin-right: auto;
+}
 .navbar-brand img {
     padding-right: 15px;
     width: 65px;
@@ -10,21 +19,30 @@ body {
 * {
     box-sizing: border-box;
 }
-
+.row {
+    margin: 10% auto;
+    justify-content: center;
+}
 /* Create two equal columns that floats next to each other */
 .column {
-    float: left;
+
     width: 50%;
     padding: 10px;
     /* Should be removed. Only for demonstration  */
     height: 600px; 
-    /* display: flex; */
+    width: 600px;
+    /* probably need to figure out how to not have set height and width*/
 }
 .column img {
     max-width: 100%;
     max-height: 100%;
     display: block;
     margin: 0 auto;
+}
+
+.profileBlurb p {
+    background-color: white;
+    text-align: justify;
 }
 
 /* Clear floats after the columns */
