@@ -4,7 +4,8 @@ body {
 .navbar-nav {
    background-color: aqua; 
    margin-left: auto;
-   margin-right: 20%;
+   margin-right: 100px;
+
 }
 .navbar-brand {
     background-color: aquamarine;
@@ -40,9 +41,12 @@ body {
     margin: 0 auto;
 }
 
-.profileBlurb p {
+.profileBlurb h3 {
     background-color: white;
     text-align: justify;
+    /* height: 600px; */
+    /* line-height: 600px; */
+    
 }
 
 /* Clear floats after the columns */
@@ -57,4 +61,99 @@ body {
 .column {
     width: 100%;
 }
+}
+
+/* My Work section below*/
+
+.cta {
+    text-align: center;
+    padding: 1%;
+}
+.workGrid {
+    display: grid;
+    /* grid-template-areas:
+    'firstSpot secondSpot thirdSpot fourthSpot'
+    'fifthSpot sixthSpot seventhSpot eighthSpot'; */
+
+    grid-template-areas:
+    'firstSpot secondSpot'
+    'thirdSpot fourthSpot';
+    grid-gap: 10px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+}
+.image1 {
+    grid-area: firstSpot;
+}
+.item1 {
+    grid-area: secondSpot;
+    background-color: aqua;
+}
+.image2 {
+    grid-area: thirdSpot;
+}
+.item2 {
+    grid-area: fourthSpot;
+    background-color: aqua;
+}
+/* .image3 {
+    grid-area: fifthSpot;
+}
+.item3 {
+    grid-area: sixthSpot;
+    background-color: aqua;
+}
+.image4 {
+    grid-area: seventhSpot;
+}
+.item4 {
+    grid-area: eighthSpot;
+    background-color: aqua;
+} */
+
+/* Button styling for links to case study */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
+  }
+h3 {
+    text-align: center;
+}
+.topnav a.active {
+    margin-right: auto;
+    margin-left: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        display: grid;
+        grid-template-areas:
+        'firstSpot'
+        'secondSpot' 
+        'thirdSpot' 
+        'fourthSpot';
+        /* 'fifthSpot'
+        'sixthSpot' 
+        'seventhSpot'
+        'eighthSpot'; */
+        grid-gap: 10px;
+        padding: 10px;
+    }
+}
+/* Styling for case study cards */
+.card-deck {
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
 }

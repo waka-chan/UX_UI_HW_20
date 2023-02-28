@@ -19,11 +19,24 @@
         <link rel="stylesheet" href="css/index.css">
         <!--Title of project-->        
         <title>Wakako Nishimura-Anderson - UX Designer</title>
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RH3SNY4224"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-RH3SNY4224');
+</script>
     </head>
+
+
+
+
     <body>
     <!-- Navigation bar Note: Make sure the Active link is updated for each page-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
-        <a class="navbar-brand" href="#"><img src="images/logo.png">Wakako's Portfolio</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top customNav">
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,10 +68,6 @@
 
 
     <!-- Responsive two column layout -->
-
-    <h2>Responsive Two Column Layout</h2>
-<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
-
 <div class="row">
   <div class="column" style="background-color:#aaa;">
     <!-- <h2>Column 1</h2>
@@ -67,9 +76,32 @@
   </div>
   <div class="column profileBlurb" style="background-color:#bbb;">
     <h2>Hi, I'm Wakako!</h2>
-    <p>I am a human-centered UX designer focused on building products from a place of empathy and research. I have a background in both design and engineering that help me understand how to create beautiful products and create an atmosphere where empathy is at the forefront of every design.</p>
+    <h3>I am a human-centered UX designer focused on building products from a place of empathy and research. I have a background in both design and engineering that help me understand how to create beautiful products and create an atmosphere where empathy is at the forefront of every design.</h3>
   </div>
 </div>
+
+
+
+
+    <!--Responsive card layout for case studies-->
+    <div class="card-deck">
+    <div class="card">
+        <img src="images/dogstile.png" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/dogstile.png" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
