@@ -13,7 +13,12 @@ body {
 .navbar-brand img {
     width: 65px;
 }
-
+h2 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(left,#C90EA1, #2E066E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 * {
     box-sizing: border-box;
 }
@@ -89,14 +94,14 @@ h1 {
 }
 .item1 {
     grid-area: secondSpot;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .image2 {
     grid-area: thirdSpot;
 }
 .item2 {
     grid-area: fourthSpot;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 /* .image3 {
     grid-area: fifthSpot;
